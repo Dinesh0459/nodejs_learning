@@ -24,7 +24,7 @@ NodeJS Module system:
 
 importing and exporting node modules and own modules:
 
-for importing the node modules in the to our project we use a keyword called as require
+for importing the node modules into our project we use a keyword called as require
 for example: we wanted to work with a filesystem in nodejs for that there is a module named 'fs':
 
 const fs = require('fs') // importing the node module of file system 
@@ -55,9 +55,9 @@ the following down below.Arrays
 so, if you want to use any package from npm manager you can use the command - npm install <package_name>
 and the package related files are stored in the node modules folder which helps the package to be supported 
 
-if we wnat the package to be used inside the module. then we can do that using the follwoing givne below 
+if we want the package to be used inside the module. then we can do that using the following given below 
 
-1. require('<package_name>') - one way to import the package wihtout es6
+1. require('<package_name>') - one way to import the package without es6
 2. import package from '<package_name>'
 
 -------------------------------------------------------------------------------------------------------
@@ -68,7 +68,7 @@ Usually, we build the backend service to manage the DB and handle user given dat
 
 Inorder to take the input from the user from the command line. we take the input from the command line args
 and collect them using process keyword. we collect them as process.argvs[1](try this command when you want to
-collect the inout from the command line).
+collect the input from the command line).
 
 2. But the above given process.argvs doesnot provide the args in the required and useful format so we have new
 package called yargs which gives takes the user input and give it to us in the useful format. When we use the yargs.argv. The input provided by the user can be more useful.

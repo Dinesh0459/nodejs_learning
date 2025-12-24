@@ -1,0 +1,39 @@
+create a new repository in the GitHub:
+
+Task 1:
+
+1. first create a new repo in the GitHub from GitHub.com and login and create a new repository
+2. see if you are doing following the given below ones
+
+   🚨 IMPORTANT:
+       ❌ Do NOT check “Add a README”
+       ❌ Do NOT add .gitignore
+       ❌ Do NOT choose a license
+
+3. Finally, after all click -> create new repository
+
+Task 2:
+
+1. Open the project folder in your local folder 
+
+give the following commands :
+1. git init - initlize the git in your local project 
+2. git status - checks the status of what files are added and what new modifications are done to the current repo 
+3. Note that: if there are any files to be untracked by git then -> create a .gitignore file in the working directory -> add the file name/directory name to be ignored.
+4. git add . - stages all the files in the git repo 
+5. git commit -m "any commit message" - this commits all the changes of your project 
+6. Here comes the key change if repo is already present then - git push origin main (if you want to push to main)
+   if you want to push to specific branch then ensure that branch exists
+   
+   if the git remote doesnot exists then add one using the command as shown below git remote add origin https://github.com/Dinesh0459/nodejs_learning.git
+   Once you added you can push it to the branch now 
+
+if you want to create a new branch in GitHub: 
+
+1. git branch <branch_name>
+2. git checkout <branch_name> - to swtich to the specific branch 
+3. To create and switch to the new git branch use the command - git checkout -b <branch_name>
+
+
+
+
