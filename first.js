@@ -1,0 +1,1 @@
+console.log("This is my first program... wish me good luck")

@@ -1,0 +1,123 @@
+Nodejs:
+
+Pre-requisites:
+
+Nodejs is a java script running on the server and it’s actually executing the js on the chrome’s or v8 engine
+V8 engine – is a javascript compiling tool written in c++
+Components to be learnt:
+Lexical structure - done
+o   Expressions - done
+o	Data types - done
+o	classes - done
+o	variables - done
+o	functions - done
+o	this Operator - done
+o	arrow function - done
+o	Arrays - done
+o	Template literals - done
+o	Strict mode
+o	ECMA script 2015 – es6
+
+
+------------------------------------------------------------------------------------------------
+NodeJS Module system:
+
+importing and exporting node modules and own modules:
+
+for importing the node modules in the to our project we use a keyword called as require
+for example: we wanted to work with a filesystem in nodejs for that there is a module named 'fs':
+
+const fs = require('fs') // importing the node module of file system 
+fs.writeFileSync("sample.txt", "I'm writing the data to sample.txt.............")
+------------------------------------------------------------------------------------------------
+
+own module:
+
+app2.js:
+const name = 'Dinesh'
+module.exports = name
+    
+app1.js
+const name = require('./app2.js')
+console.log(name)
+
+not only the variables and also functions can be exported. As shown above from one file to the other 
+-------------------------------------------------------------------------------------------------
+
+While working on node, there are many node packages which have to installed to work with such packages.
+For that we have to use node package manager which handles all the node hosted packages. For that we do 
+the following down below.Arrays
+
+1, Install node package manager 
+2, then initilize the manager using the command  - npm init
+3, package.json file is created which is js object notation contains all the key-value pairs 
+
+so, if you want to use any package from npm manager you can use the command - npm install <package_name>
+and the package related files are stored in the node modules folder which helps the package to be supported 
+
+if we wnat the package to be used inside the module. then we can do that using the follwoing givne below 
+
+1. require('<package_name>') - one way to import the package wihtout es6
+2. import package from '<package_name>'
+
+-------------------------------------------------------------------------------------------------------
+File-System and Command line args:
+
+1. Taking user input:
+Usually, we build the backend service to manage the DB and handle user given data. 
+
+Inorder to take the input from the user from the command line. we take the input from the command line args
+and collect them using process keyword. we collect them as process.argvs[1](try this command when you want to
+collect the inout from the command line).
+
+2. But the above given process.argvs doesnot provide the args in the required and useful format so we have new
+package called yargs which gives takes the user input and give it to us in the useful format. When we use the yargs.argv. The input provided by the user can be more useful.
+
+difference between both of them is as shown below.
+
+console.log(process.argv) # 1
+console.log(yargs.argv) # 2
+
+These arguments are given process.argv
+[
+  'C:\\Program Files\\nodejs\\node.exe',
+  'C:\\Users\\gdine\\OneDrive\\Desktop\\nodejs\\notes_app\\app.js',
+  '--Name',
+  'Dinesh',
+  '--Age',
+  '24',
+  '--Sex',
+  'Male',
+  '--Job',
+  'Softwar engineer'
+]
+The arguments are given yargs.argv
+{
+  _: [],
+  Name: 'Dinesh',
+  Age: 24,
+  Sex: 'Male',
+  Job: 'Softwar engineer',
+  '$0': 'app.js'
+}
+
+
+Note that in the newer functions of yargs to retrive the required info, we have 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
